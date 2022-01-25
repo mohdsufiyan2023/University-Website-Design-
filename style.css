@@ -38,10 +38,10 @@ nav img{
 	font-size: 13px;
 }
 .nav-links ul li::after{
-	content: '';
+	content:'';
 	width:0%;
 	height:1px;
-	background: #fff;
+	background:#fff;
 	display: block;
 	margin: auto;
 	transition:0.5s;
@@ -57,11 +57,15 @@ nav img{
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%,-50%);
-	text-align: center;
+	text-align:center;
 }
-.text-box h1{
+.text-box:hover h1{
 	font-size: 62px;
+	color:skyblue;
+	transition: 0.5s;
+
 }
+
 .text-box p{
 	margin: 10px 0 40px;
 	font-size: 14px;
@@ -80,8 +84,9 @@ nav img{
 .hero-btn:hover{
 	border: 0px solid #fff;
 	background: #f44336;
-	transition: 1s;
+	transition: 0.5s;
 }
+
 nav .fa{
 	display: none;
 }	
@@ -125,9 +130,10 @@ nav-links ul{
 	text-align: center;
 	padding-top: 100px;
 }
-h1{
-	font-size: 36px;
+h1:hover{
+	font-size: 44px;
 	font-weight: 600;
+	transition: 0.5s;
 }
 p{
 	color: #fff;
@@ -175,8 +181,8 @@ p{
 }
 .campus-col{
 	flex-basis:33%;
-	border-radius: 10px;
-	margin-bottom: 30px;
+	border-radius: 30px;
+	margin-bottom: 10px;
 	position: relative;
 	overflow: hidden;
 }
@@ -222,22 +228,77 @@ p{
 	padding-top: 100px;
 }
 .facilities-col{
-	flex-basis: 31%;
-	border-radius: 10px;
-	margin-bottom: 5%;
+	flex-basis:33%;
+	border-radius:20px;
+	margin-bottom:5%;
 	text-align: left;
+	box-sizing: border-box;
+	transition: 0.5s;
 }
 .facilities-col img{
 	width: 100%;
 	border-radius: 10px;
+
 }
+.image{
+	flex-basis:33%;
+	border-radius:20px;
+	margin-bottom:5%;
+	text-align: left;
+	box-sizing: border-box;
+	transition: 0.5s;
+	height: 350px;
+	width: 350px;
+	background: url("images/library.png");
+	background-size: 100%;
+}
+.image1{
+	flex-basis:33%;
+	border-radius:20px;
+	margin-bottom:5%;
+	text-align: left;
+	box-sizing: border-box;
+	transition: 0.5s;
+	height: 350px;
+	width: 350px;
+	background: url("images/basketball.png");
+	background-size: 100%;
+}
+.image2{
+	height: 350px;
+	width: 350px;
+	background: url("images/cafeteria.png");
+	background-size: 100%;
+}
+.image:hover{
+	background-size: 150%;
+	background-position: none;
+	transition: 0.5s;
+	margin: 15px;
+	padding:15px;
+}
+.image1:hover{
+	background-size: 150%;
+	background-position: none;
+	transition: 0.5s;
+	margin: 15px;
+	padding:15px;
+}
+.image2:hover{
+	background-size: 150%;
+	background-position: none;
+	transition: 0.5s;
+	margin: 15px;
+	padding: 15px;
+}	
 .facilities-col p{
 	padding: 0;
 }
-.facilities-col h3{
+.facilities-col:hover h3{
 	margin-top: 16px;
 	margin-bottom:15px;
 	text-align: left;
+	transition: 0.5s;
 }
 
 /*----testimonials---*/
@@ -247,16 +308,25 @@ p{
 	padding-top:100px;
 	text-align: center;
 }
+.testimonials:hover h2{
+	font-size: 42px;
+	color:#000;
+	transition: 0.5s;
+}
 .testimonials-col{
 	flex-basis: 44%;
 	border-radius: 10px;
 	margin-bottom: 5%;
 	text-align: left;
-	background: #fff3f3;
+	background: #0511;
 	padding: 25px;
 	cursor: pointer;
 	display: flex;
+	transition: 0.5s;
 }
+.testimonials-col:hover{
+	box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+}	
 .testimonials-col img{
 	height: 40px;
 	margin-left: 5%;
@@ -315,10 +385,14 @@ p{
 	font-weight: 600;
 }
 .icons{
-	color: #f44336;
+	color: #A9A9A9;
 	margin: 0 13px;
 	cursor: pointer;
 	padding: 18px 0;
+}
+#fa fa-heart{
+	color: #A9A9A9;
+	
 }
 
 
